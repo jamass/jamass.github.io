@@ -68,7 +68,7 @@ var svg = d3.select("body").append("svg")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("barplotdata.json", function(error, data) {
+d3.json("testdata/barplotdata.json", function(error, data) {
     console.log(data, data.list.length);
     entries = data.list;
     entries.forEach(function (d) {
