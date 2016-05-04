@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <style>
+        path {
+    stroke: #892200;
+    stroke-width: 2;
+    fill: none;
+}
+
+
+        .axis {
+            font: 10px sans-serif;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        div.tooltip {
+            position: absolute;
+            text-align: center;
+            width: 60px;
+            height: 28px;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: #CCCCCC;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<div id="humidity"></div>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<!--<script src="lineplot1.js"></script>-->
+<script src="https://jamass.github.io/lineplots/lineplot1.js"></script>
+
+<script>lineplot_humidity("http://jamass.github.io/testdata/barplotdata.json","#humidity"); </script>
+</body>
