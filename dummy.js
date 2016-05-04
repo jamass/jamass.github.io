@@ -24,7 +24,7 @@ function barplot_humidity(data_url, div_id){
 	    .ticks(10);
 
 
-	var svg = d3.select("body").append("svg")
+	var svg = d3.select(div_url).append("svg")
 	    .attr("width", width + margin.left + margin.right)
 	    .attr("height", height + margin.top + margin.bottom)
 	  .append("g")
